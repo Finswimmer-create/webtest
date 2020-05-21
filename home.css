@@ -1,3 +1,8 @@
+.font1{
+  background-color: blue;
+  color: white;
+}
+
 .msr_newslist01 {
   border-top: 1px solid #AAAAAA;
   width: 100%;
@@ -9,7 +14,7 @@
 .msr_newslist01 li a {
   box-sizing: border-box;
   color: #000000;
-  display: table;
+  display: inline;
   padding: 10px;
   text-decoration: none;
   transition: 0.2s ease-in-out;
