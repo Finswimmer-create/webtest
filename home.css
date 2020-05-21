@@ -1,6 +1,8 @@
 .font1{
   background-color: blue;
+  font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 .msr_newslist01 {
