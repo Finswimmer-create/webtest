@@ -12,6 +12,7 @@
 .msr_newslist01 li {
   border-bottom: 1px solid #AAAAAA;
   font-size: 14px;
+  width: 50%
 }
 .msr_newslist01 li a {
   box-sizing: border-box;
