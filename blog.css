@@ -5,7 +5,6 @@ tr *:last-child{
   color:#0ba9ea;
 }
 tr:nth-child(4) td:nth-child(2){
-color: white;
 background-color: red;
 }
 
