@@ -1,5 +1,18 @@
+table{
+  width: 90%
+  margin:auto;
+}
+th{
+  color: white;
+  background-color: blue;
+}
+td,th{
+  border: 2px #1E90FF;
+  font-size: 10px;
+  text-align: left;
+}
 .container{
-  width:1000px;
+  width:500px;
   margin:0 auto;
   font-family: "M PLUS Rounded 1c";
   background-color:#7ce2d9;
