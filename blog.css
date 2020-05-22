@@ -31,7 +31,7 @@ ul#submenu_body li a {
 	display:block;			/*リンクをブロック表示にする*/
 	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
 	padding:2px 0px 2px 0px;	/*サブメニュー項目のパディング*/
-	color: red;	/*サブメニュー項目の色*/
+	color: white;	/*サブメニュー項目の色*/
 	text-decoration:none;		/*リンクの下線を無くす*/
 }
 ul#submenu_body li a:hover {
@@ -53,8 +53,7 @@ background-color: red;
 }
 
 .container{
-  width: 300px;
-  height: 360px;
+  width: 25%;
   background-color: #DCDCDC
 }
 table{
@@ -64,4 +63,70 @@ td,th{
   border-color: black;
   background-color: white;
   padding: 5px;
+}
+
+/* 記事デザイン */
+.msr_box03 {
+  background-color: #CCCCFF;
+  width: 250px;
+  margin: 40px;
+}
+.msr_box03 a{
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  color: #000000;
+  display:block;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+.msr_box03 img {
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  display: block;
+}
+.msr_box03 p {
+  background-color: #CCCCFF;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 4px;
+}
+.msr_box03 .ttl {
+  background-color: blue;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 8px;
+  position: relative;
+}
+
+/* 青の三角形 */
+.msr_box03 .ttl:before {
+  border: 7px solid transparent;
+  border-top: 7px solid #1B73BA;
+  box-sizing: border-box;
+  content: "";
+  height: 7px;
+  left: 50%;
+  margin:0 0 0 -7px;
+  position: absolute;
+  top: 100%;
+  width: 14px;
+}
+.msr_box03 a:hover{
+  opacity: 0.8;
+}
+
+.flexbox {
+  display: flex;
+  justify-content:left;
+  flex-wrap: wrap;
 }
