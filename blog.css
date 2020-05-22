@@ -12,8 +12,7 @@ tr *:last-child{
   background-color: #DCDCDC
 }
 table{
-  width: 90%;
-  margin: auto;
+  margin: 10px;
 }
 td,th{
   border-color: black;
