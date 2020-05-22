@@ -10,3 +10,6 @@ tr *:last-child{
   margin: auto;
   background-color: #DCDCDC
 }
+table{
+  width: 90%;
+}
