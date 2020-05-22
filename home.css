@@ -4,10 +4,10 @@
   color: white;
   margin: auto;
 }
-
+/* 記事リスト */
 .msr_newslist01 {
   border-top: 1px solid #AAAAAA;
-  width: 100%;
+  width: 50%;
 }
 .msr_newslist01 li {
   border-bottom: 1px solid #AAAAAA;
@@ -38,15 +38,11 @@
   padding-left: 20px;
   vertical-align: middle;
 }
-
-/* 時間の設定 */
 .msr_newslist01 li time {
   display: table-cell;
   vertical-align: top;
   width: 90px;
 }
-
-/* カテゴリの設定 */
 .msr_newslist01 li .cat01,
 .msr_newslist01 li .cat02 {
   background-color: #1B73BA;
