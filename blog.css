@@ -12,4 +12,10 @@ tr *:last-child{
 }
 table{
   width: 90%;
+  margin: auto;
+}
+td,th{
+  border-color: black;
+  background-color: white;
+  padding: 5px;
 }
