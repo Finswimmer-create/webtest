@@ -5,10 +5,3 @@ tr *:first-child{
 tr *:last-child{
   color:#0ba9ea;
 }
-
-.container{
-  width:500px;
-  margin:0 auto;
-  background-color: #DCDCDC;
-  padding:20px 0 40px;
-}
