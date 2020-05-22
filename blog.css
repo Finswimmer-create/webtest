@@ -1,18 +1,4 @@
-table{
-  width: 90%;
-  height: auto;
-　margin: auto;
-}
-th{
-  color: white;
-  background-color: blue;
-}
-td,th{
-  border-width: 5px;
-  border-color: #111111;
-  font-size: 10px;
-  text-align: left;
-}
+
 tr *:first-child{
   color:#ff69b4;
 }
@@ -23,7 +9,6 @@ tr *:last-child{
 .container{
   width:500px;
   margin:0 auto;
-  font-family: "M PLUS Rounded 1c";
   background-color: #DCDCDC;
   padding:20px 0 40px;
 }
