@@ -1,5 +1,6 @@
 table{
   width: 90%;
+  height: auto;
 　margin: auto;
 }
 th{
@@ -7,7 +8,8 @@ th{
   background-color: blue;
 }
 td,th{
-  border: 5px #111111;
+  border-width: 5px;
+  border-color: #111111;
   font-size: 10px;
   text-align: left;
 }
