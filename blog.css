@@ -4,7 +4,7 @@ tr *:first-child{
 tr *:last-child{
   color:#0ba9ea;
 }
-table.calender tbody tr:nth-child(4) td:nth-child(2){
+tr:nth-child(4) td:nth-child(2){
 color: white;
 background-color: red;
 }
