@@ -7,12 +7,12 @@ tr *:last-child{
 
 .container{
   width: 360px;
-  height: 400px
+  height: 400px;
   margin: auto;
   background-color: #DCDCDC
 }
 table{
-  margin: 10px;
+  margin: 0px auto 10px;
 }
 td,th{
   border-color: black;
