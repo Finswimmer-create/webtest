@@ -131,7 +131,3 @@ td,th{
   float: right;
   flex-wrap: wrap;
 }
-
-div#content{
-  float: left;
-}
