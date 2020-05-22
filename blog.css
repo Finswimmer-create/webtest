@@ -1,12 +1,13 @@
 table{
-  width: 90%
+  width: 90%;
+　margin: auto;
 }
 th{
   color: white;
   background-color: blue;
 }
 td,th{
-  border: 5px #1E90FF;
+  border: 5px black;
   font-size: 10px;
   text-align: left;
 }
