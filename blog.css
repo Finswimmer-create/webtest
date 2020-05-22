@@ -55,6 +55,7 @@ background-color: red;
 .container{
   width: 25%;
   background-color: #DCDCDC
+  float:left;
 }
 table{
   margin: 0px auto 5px;
@@ -127,6 +128,10 @@ td,th{
 
 .flexbox {
   display: flex;
-  justify-content:left;
+  float: right;
   flex-wrap: wrap;
+}
+
+div#content{
+  float: left;
 }
