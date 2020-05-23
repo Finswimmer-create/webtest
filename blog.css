@@ -67,7 +67,9 @@ td,th{
   border: black;
   background-color: white;
   padding: 5px;
-	font-size: 5px
+	font-size: 5px;
+	text-align: left;
+	vertical-align: top;
 }
 
 /* 記事デザイン */
