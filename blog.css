@@ -29,13 +29,13 @@ ul#submenu_body li {
 }
 ul#submenu_body li a {
 	display:block;			/*リンクをブロック表示にする*/
-	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
+	margin:0px 0px 0px 4px;		/*サブメニュー項目のマージン*/
 	padding:2px 0px 2px 0px;	/*サブメニュー項目のパディング*/
 	color: white;	/*サブメニュー項目の色*/
 	text-decoration:none;		/*リンクの下線を無くす*/
 }
 ul#submenu_body li a:hover {
-	opacity: 0.4;
+	opacity: 0.2;
 	background-color: blue;	/*リンクにマウスが乗ったら色を変える*/
 }
 
@@ -127,10 +127,4 @@ td,th{
 }
 .msr_box03 a:hover{
   opacity: 0.8;
-}
-
-.flexbox {
-  display: flex;
-  float: right;
-  flex-wrap: wrap;
 }
