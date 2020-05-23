@@ -60,7 +60,7 @@ background-color: red;
   float:left;
 }
 table{
-  margin: auto;
+  margin: 0px auto 10px;
 	width: 220px
 }
 td,th,tr{
