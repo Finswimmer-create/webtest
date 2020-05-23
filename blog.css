@@ -60,7 +60,8 @@ background-color: red;
   float:left;
 }
 table{
-  margin: 0px 10px 10px 10px;
+  margin: auto;
+	width: 220px
 }
 td,th{
   border: black;
