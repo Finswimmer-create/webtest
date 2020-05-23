@@ -29,7 +29,6 @@ ul#submenu_body li {
 }
 ul#submenu_body li a {
 	display:block;			/*リンクをブロック表示にする*/
-	margin:0px 0px 0px 4px;		/*サブメニュー項目のマージン*/
 	padding:2px 0px 2px 0px;	/*サブメニュー項目のパディング*/
 	color: white;	/*サブメニュー項目の色*/
 	text-decoration:none;		/*リンクの下線を無くす*/
@@ -59,7 +58,7 @@ background-color: red;
   float:left;
 }
 table{
-  margin: 0px 5px 5px 10px;
+  margin: 0px 5px 5px 5px;
 }
 td,th{
   border-color: black;
@@ -71,7 +70,7 @@ td,th{
 .msr_box03 {
   background-color: #CCCCFF;
   width: 224px;
-  margin: 40px;
+  margin: 28px;
 	float: left;
 }
 .msr_box03 a{
@@ -127,4 +126,11 @@ td,th{
 }
 .msr_box03 a:hover{
   opacity: 0.8;
+}
+
+div#article_box{
+	border: 1px solid black;
+	margin:8px;
+	pading:8px;
+	background-color: white;
 }
