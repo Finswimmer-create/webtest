@@ -59,7 +59,7 @@ background-color: red;
   float:left;
 }
 table{
-  margin: 0px auto 5px;
+  margin: 0px 5px 10px;
 }
 td,th{
   border-color: black;
@@ -72,6 +72,7 @@ td,th{
   background-color: #CCCCFF;
   width: 224px;
   margin: 40px;
+	float: left;
 }
 .msr_box03 a{
   box-sizing: border-box;
@@ -91,6 +92,7 @@ td,th{
   -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
   display: block;
+	width: 100%
 }
 .msr_box03 p {
   background-color: #CCCCFF;
