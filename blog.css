@@ -35,6 +35,7 @@ ul#submenu_body li a {
 	text-decoration:none;		/*リンクの下線を無くす*/
 }
 ul#submenu_body li a:hover {
+	opacity: 0.4;
 	background-color:#ffffff;	/*リンクにマウスが乗ったら色を変える*/
 }
 
@@ -69,7 +70,7 @@ td,th{
 /* 記事デザイン */
 .msr_box03 {
   background-color: #CCCCFF;
-  width: 250px;
+  width: 224px;
   margin: 40px;
 }
 .msr_box03 a{
