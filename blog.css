@@ -1,7 +1,7 @@
 /* サイドメニューデザイン */
 div#submenu {
 	width:172px;			/*幅の指定*/
-	margin:28px 12px 12px 12px;	/*位置調整（IE6のバグに注意）*/
+	margin:12px 12px 12px 12px;	/*位置調整（IE6のバグに注意）*/
 	display:inline;			/*IE6のマージン算出のバグ対策*/
 	float:right;			/*サブメニューのカラムを右寄せにする*/
 }
