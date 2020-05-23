@@ -36,7 +36,7 @@ ul#submenu_body li a {
 }
 ul#submenu_body li a:hover {
 	opacity: 0.4;
-	background-color:#ffffff;	/*リンクにマウスが乗ったら色を変える*/
+	background-color: blue;	/*リンクにマウスが乗ったら色を変える*/
 }
 
 
@@ -54,12 +54,12 @@ background-color: red;
 }
 
 .container{
-  width: 25%;
+  width: 20%;
   background-color: #DCDCDC;
   float:left;
 }
 table{
-  margin: 0px 5px 10px;
+  margin: 0px 5px 5px 10px;
 }
 td,th{
   border-color: black;
