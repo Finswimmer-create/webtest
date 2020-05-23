@@ -53,7 +53,7 @@ background-color: red;
 }
 
 .container{
-	margin: 0px 12px 12px 12px;
+	margin: 12px 12px 12px 12px;
   width: 240px;
 	height: auto;
   background-color: #DCDCDC;
@@ -63,7 +63,7 @@ table{
   margin: auto;
 	width: 220px
 }
-td,th{
+td,th,tr{
   border: black;
   background-color: white;
   padding: 5px;
