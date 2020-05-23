@@ -71,7 +71,7 @@ td,th{
 /* 記事デザイン */
 .msr_box03 {
   background-color: #CCCCFF;
-  width: 224px;
+  width: 220px;
   margin: 32px;
 	float: left;
 }
@@ -131,7 +131,7 @@ td,th{
 }
 
 .article_box{
-	width: 864px;
+	width: 858px;
 	height: auto;
 	border: 1px solid black;
 	margin:8px;
