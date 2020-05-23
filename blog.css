@@ -72,7 +72,7 @@ td,th{
 .msr_box03 {
   background-color: #CCCCFF;
   width: 220px;
-  margin: 32px;
+  margin: 28px;
 	float: left;
 }
 .msr_box03 a{
@@ -131,7 +131,7 @@ td,th{
 }
 
 .article_box{
-	width: 858px;
+	width: 844px;
 	height: auto;
 	border: 1px solid black;
 	margin:8px;
