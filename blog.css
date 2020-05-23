@@ -53,15 +53,16 @@ background-color: red;
 }
 
 .container{
+	margin: 28px 0px 0px 0px;
   width: 20%;
   background-color: #DCDCDC;
   float:left;
 }
 table{
-  margin: 0px 5px 5px 5px;
+  margin: 0px auto 5px;
 }
 td,th{
-  border-color: black;
+  border: black;
   background-color: white;
   padding: 5px;
 }
@@ -129,6 +130,8 @@ td,th{
 }
 
 div#article_box{
+	width: auto;
+	height: auto;
 	border: 1px solid black;
 	margin:8px;
 	pading:8px;
