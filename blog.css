@@ -1,7 +1,7 @@
 /* サイドメニューデザイン */
 div#submenu {
 	width:160px;			/*幅の指定*/
-	margin:10px 10px 10px 25px;	/*位置調整（IE6のバグに注意）*/
+	margin:28px 12px 12px 12px;	/*位置調整（IE6のバグに注意）*/
 	display:inline;			/*IE6のマージン算出のバグ対策*/
 	float:right;			/*サブメニューのカラムを右寄せにする*/
 }
@@ -53,13 +53,14 @@ background-color: red;
 }
 
 .container{
-	margin: 28px 0px 0px 0px;
-  width: 20%;
+	margin: 28px 12px 0px 12px;
+  width: 240px;
+	height: auto;
   background-color: #DCDCDC;
   float:left;
 }
 table{
-  margin: 0px auto 5px;
+  margin: 0px auto 10px;
 }
 td,th{
   border: black;
@@ -71,7 +72,7 @@ td,th{
 .msr_box03 {
   background-color: #CCCCFF;
   width: 224px;
-  margin: 28px;
+  margin: 32px;
 	float: left;
 }
 .msr_box03 a{
@@ -129,7 +130,7 @@ td,th{
   opacity: 0.8;
 }
 
-div#article_box{
+.article_box{
 	width: auto;
 	height: auto;
 	border: 1px solid black;
