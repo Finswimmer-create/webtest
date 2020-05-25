@@ -21,8 +21,8 @@
 <body>
   <canvas></canvas>
 
+  <script src="perlin.js"></script>
   <script>
-
     let stageW = 0; // 画面の幅
     let stageH = 0; // 画面の高さ
 
@@ -49,12 +49,12 @@
       // 画面をリセット
       context.clearRect(0, 0, stageW, stageH);
       context.lineWidth = 10; // 線の太さ
+
+      const amplitude = stageH / 2; // 振幅（縦幅)の大きさ
+      const segmentNum = 150; // 分割数
+
       context.beginPath(); // 線の開始
       context.strokeStyle = 'white'; // 線の色
-
-      const segmentNum = 150;　// 分割数
-      const amplitude = stageH / 3; // 振幅
-
 
       [...Array(segmentNum).keys()].forEach(i => {
         // X座標
@@ -63,7 +63,7 @@
          const py = time; // 時間の入力値
          const y = amplitude * noise.perlin2(px, py) + stageH / 2;
 
-         
+
         // 線を描く
         if (i === 0) {
           context.moveTo(x, y);
