@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sample - ICS MEDIA</title>
+  <title>line design</title>
   <style>
     body {
       margin: 0;
@@ -48,9 +48,27 @@
       context.lineWidth = 10; // 線の太さ
       context.beginPath(); // 線の開始
       context.strokeStyle = 'white'; // 線の色
-      context.moveTo(0, stageH / 2); // 開始点
-      context.lineTo(stageW, stageH / 2); // 終了点
-      context.stroke(); // 線を描く
+
+      const segmentNum = 150;　// 分割数
+      const amplitude = stageH / 3; // 振幅
+      const time = Date.now() / 1000; // 媒介変数(時間)
+
+      [...Array(segmentNum).keys()].forEach(i => {
+        // X座標
+        const x = i / (segmentNum - 1) * stageW;
+        // ラジアン
+        const radian = i / segmentNum * Math.PI + time;
+        // Y座標
+        const y = amplitude * Math.sin(radian) + stageH / 2;
+
+        // 線を描く
+        if (i === 0) {
+          context.moveTo(x, y);
+        } else {
+          context.lineTo(x, y);
+        }
+      });
+      context.stroke();
     }
 
     /** リサイズ時のイベントです。 */
