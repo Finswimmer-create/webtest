@@ -38,8 +38,7 @@
     /** アニメーションフレームのタイミングです。 */
     function tick() {
       requestAnimationFrame(tick);
-       const time = Date.now() / 4000;
-      draw(time);
+      draw();
     }
 
     /** 描画します。 */
@@ -49,28 +48,10 @@
       context.lineWidth = 10; // 線の太さ
       context.beginPath(); // 線の開始
       context.strokeStyle = 'white'; // 線の色
-
-      const segmentNum = 100;　// 分割数
-       const amplitude = stageH / 3; // 振幅
-
-
-       [...Array(segmentNum).keys()].forEach(i => {
-         // X座標
-         const x = i / (segmentNum - 1) * stageW;
-         // ラジアン
-         const px = i / 50; // 横軸の入力値
-         const py = time; // 時間の入力値
-         const y = amplitude * noise.perlin2(px, py) + stageH / 2;
-
-         // 線を描く
-         if (i === 0) {
-           context.moveTo(x, y);
-         } else {
-           context.lineTo(x, y);
-         }
-       });
-       context.stroke();
-     }
+      context.moveTo(0, stageH / 2); // 開始点
+      context.lineTo(stageW, stageH / 2); // 終了点
+      context.stroke(); // 線を描く
+    }
 
     /** リサイズ時のイベントです。 */
     function resize() {
