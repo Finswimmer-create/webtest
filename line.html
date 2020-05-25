@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sample - ICS MEDIA</title>
+  <style>
+    body {
+      margin: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      width: 100vw;
+      height: 100vh;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+
+  <script>
+
+    let stageW = 0; // 画面の幅
+    let stageH = 0; // 画面の高さ
+
+    // canvas要素の参照を取得
+    const canvas = document.querySelector('canvas');
+    // 2Dの描画命令群を取得
+    const context = canvas.getContext('2d');
+
+    tick();
+    resize();
+    window.addEventListener('resize', resize);
+
+    /** アニメーションフレームのタイミングです。 */
+    function tick() {
+      requestAnimationFrame(tick);
+       const time = Date.now() / 4000;
+      draw(time);
+    }
+
+    /** 描画します。 */
+    function draw() {
+      // 画面をリセット
+      context.clearRect(0, 0, stageW, stageH);
+      context.lineWidth = 10; // 線の太さ
+      context.beginPath(); // 線の開始
+      context.strokeStyle = 'white'; // 線の色
+
+      const segmentNum = 100;　// 分割数
+       const amplitude = stageH / 3; // 振幅
+
+
+       [...Array(segmentNum).keys()].forEach(i => {
+         // X座標
+         const x = i / (segmentNum - 1) * stageW;
+         // ラジアン
+         const px = i / 50; // 横軸の入力値
+         const py = time; // 時間の入力値
+         const y = amplitude * noise.perlin2(px, py) + stageH / 2;
+
+         // 線を描く
+         if (i === 0) {
+           context.moveTo(x, y);
+         } else {
+           context.lineTo(x, y);
+         }
+       });
+       context.stroke();
+     }
+
+    /** リサイズ時のイベントです。 */
+    function resize() {
+      stageW = innerWidth * devicePixelRatio;
+      stageH = innerHeight * devicePixelRatio;
+
+      canvas.width = stageW;
+      canvas.height = stageH;
+    }
+  </script>
+</body>
+</html>
