@@ -5,17 +5,10 @@
  * Optimisations by Peter Eastman (peastman@drizzle.stanford.edu).
  * Better rank ordering method by Stefan Gustavson in 2012.
  * Converted to Javascript by Joseph Gentle.
- *
- * Version 2012-03-09
- *
- * This code was placed in the public domain by its original author,
- * Stefan Gustavson. You may use it as you see fit, but
- * attribution is appreciated.
- *
  */
 
 (function(global){
-  var module = global.noise = {};
+  var module = typeof exports === 'object' ? exports : (global.noise = {});
 
   function Grad(x, y, z) {
     this.x = x; this.y = y; this.z = z;
