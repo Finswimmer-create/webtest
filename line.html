@@ -20,6 +20,7 @@
 </head>
 <body>
   <canvas></canvas>
+
   <script src="perlin.js"></script>
   <script>
     let stageW = 0; // 画面の幅
@@ -29,6 +30,8 @@
     const canvas = document.querySelector('canvas');
     // 2Dの描画命令群を取得
     const context = canvas.getContext('2d');
+
+    noise.seed(Math.random());
 
     resize();
     tick();
@@ -50,8 +53,8 @@
       context.beginPath();
       context.strokeStyle = `white`;
 
-      const segmentNum = 30;　// 分割数
-      const amplitude = stageH / 3; // 振幅
+      const segmentNum = 150;　// 分割数
+      const amplitude = stageH / 2; // 振幅
 
       [...Array(segmentNum).keys()].forEach(i => {
         // X座標
