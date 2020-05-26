@@ -23,8 +23,6 @@
 
   <script src="perlin.js"></script>
   <script>
-
-
     let stageW = 0; // 画面の幅
     let stageH = 0; // 画面の高さ
 
@@ -46,6 +44,7 @@
       draw(time);
     }
 
+
     /** 描画します。 */
     function draw(time) {
       // 画面をリセット
@@ -53,16 +52,20 @@
       context.lineWidth = 1;
 
       const amplitude = stageH / 2; // 振幅（縦幅)の大きさ
-      const lineNum = 50; // ラインの数
+      const lineNum = 150; // ラインの数
       const segmentNum = 150; // 分割数
 
-      [...new Array(lineNum).keys()].forEach(j => {
+      [...Array(lineNum).keys()].forEach(j => {
         const coefficient = 50 + j;
 
         context.beginPath();
-        context.strokeStyle = `white`;
 
-        [...new Array(segmentNum).keys()].forEach(i => {
+        const h = Math.round(j / lineNum * 360); // 色相
+        const s = 100; // 彩度
+        const l = Math.round(j / lineNum * 100); // 明度
+        context.strokeStyle = `hsl(${h}, ${s}%, ${l}%)`;
+
+        [...Array(segmentNum).keys()].forEach(i => {
 
           const x = i / (segmentNum - 1) * stageW;
 
