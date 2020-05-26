@@ -51,8 +51,8 @@
       context.clearRect(0, 0, stageW, stageH);
       context.lineWidth = 1;
 
-      const amplitude = stageH / 2; // 振幅（縦幅)の大きさ
-      const lineNum = 150; // ラインの数
+      const amplitude = stageH / 5; // 振幅（縦幅)の大きさ
+      const lineNum = 50; // ラインの数
       const segmentNum = 150; // 分割数
 
       [...Array(lineNum).keys()].forEach(j => {
@@ -60,7 +60,7 @@
 
         context.beginPath();
 
-        const h = Math.round(j / lineNum * 360); // 色相
+        const h = Math.round(j / lineNum * 180); // 色相
         const s = 100; // 彩度
         const l = Math.round(j / lineNum * 100); // 明度
         context.strokeStyle = `hsl(${h}, ${s}%, ${l}%)`;
