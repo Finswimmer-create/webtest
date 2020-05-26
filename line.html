@@ -48,21 +48,26 @@
     function draw(time) {
       // 画面をリセット
       context.clearRect(0, 0, stageW, stageH);
-      context.lineWidth = 10;
+      context.lineWidth = 1;
 
       const amplitude = stageH / 2; // 振幅（縦幅)の大きさ
-      const segmentNum = 150; // 分割数
+      const lineNum=150; //ライン数
+      const segmentNum = 200; // 分割数
+
+      [...new Array(lineNum).keys()].forEach(j => {
+             const coefficient = 50 + j;
 
       context.beginPath();
       context.strokeStyle = `white`;
 
-      [...Array(segmentNum).keys()].forEach(i => {
+      [...new Array(segmentNum).keys()].forEach(i => {
 
-        const x = i / (segmentNum - 1) * stageW;
+           const x = i / (segmentNum - 1) * stageW;
 
-        const px = i / 50; // 横軸の入力値
-        const py = time; // 時間の入力値
-        const y = amplitude * noise.perlin2(px, py) + stageH / 2;
+           const px = i / coefficient;
+           const py = (j / 50 + time);
+           const y = amplitude * noise.perlin2(px, py) + stageH / 2;
+
 
         if (i === 0) {
           context.moveTo(x, y);
