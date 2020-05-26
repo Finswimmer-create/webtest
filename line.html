@@ -20,7 +20,7 @@
 </head>
 <body>
   <canvas></canvas>
-
+  <script src="perlin.js"></script>
   <script>
     let stageW = 0; // 画面の幅
     let stageH = 0; // 画面の高さ
@@ -37,7 +37,8 @@
     /** エンターフレームのタイミングです。 */
     function tick() {
       requestAnimationFrame(tick);
-      draw();
+      const time = Date.now() / 4000;
+      draw(time);
     }
 
 
@@ -51,15 +52,13 @@
 
       const segmentNum = 30;　// 分割数
       const amplitude = stageH / 3; // 振幅
-      const time = Date.now() / 1000; // 媒介変数(時間)
 
       [...Array(segmentNum).keys()].forEach(i => {
         // X座標
         const x = i / (segmentNum - 1) * stageW;
-        // ラジアン
-        const radian = i / segmentNum * Math.PI + time;
-        // Y座標
-        const y = amplitude * Math.sin(radian) + stageH / 2;
+        const px = i / 50; // 横軸の入力値
+        const py = time; // 時間の入力値
+        const y = amplitude * noise.perlin2(px, py) + stageH / 2;
 
         // 線を描く
         if (i === 0) {
