@@ -1,4 +1,16 @@
 .img1{
   width:320px;
   hight:240px;
+  top: 100px;
+  left:100px;
+}
+
+.box1{
+  width: 320px;
+  hight: 240px;
+  background-color: #000033;
+}
+
+p {
+  color: white;
 }
