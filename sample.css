@@ -26,6 +26,16 @@
   left: 200px;
 }
 
+.box2{
+  width: 600px;
+  hight: 400px;
+  background-color: #000033;
+  z-index: 5;
+  position: absolute;
+  top: 800px;
+  right: 200px;
+}
+
 .p {
   color: white;
   padding: 10px;
