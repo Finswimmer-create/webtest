@@ -3,16 +3,25 @@
   hight:240px;
   top: 100px;
   left:100px;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
 
 .box1{
   width: 320px;
   hight: 240px;
   background-color: #000033;
+  z-index: 5;
+  position: absolute;
+  top: 200px;
+  left: 200px;
 }
 
 p {
   color: white;
   padding: 10px;
   margin: 10px;
+
 }
