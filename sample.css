@@ -1,4 +1,4 @@
-img.content1{
+.content1{
   position:absolute;
   top:100px;
   left:100px;
@@ -6,20 +6,12 @@ img.content1{
   hight: 160px;
 }
 
-img.content2{
-  position:absolute;
-  top:200px;
-  left:200px;
-  width: 240px;
-  hight: 160px;
-}
 
-div.sample{
+.sample{
   position:absolute;
   top:200px;
   left:200px;
   width: 240px;
   hight: 160px;
-  border: 1px solid black;
   background-color: #000066;
 }
