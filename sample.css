@@ -1,15 +1,15 @@
 .content1{
+  width: 20%;
+  hight: 20%;
   top:100px;
   left:100px;
-  width: 240px;
-  hight: 160px;
 }
 
 
 .sample{
   top:200px;
   left:200px;
-  width: 240px;
-  hight: 160px;
+  width: 20%;
+  hight: 20%;
   background-color: #000066;
 }
