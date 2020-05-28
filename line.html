@@ -71,8 +71,8 @@
         context.beginPath();
 
         const h = Math.round(j / lineNum * 200-240); // 色相
-        const s = 80; // 彩度
-        const l = Math.round(j / lineNum * 80); // 明度
+        const s = 40; // 彩度
+        const l = Math.round(j / lineNum * 40); // 明度
         context.strokeStyle = `hsl(${h}, ${s}%, ${l}%)`;
 
         [...Array(segmentNum).keys()].forEach(i => {
