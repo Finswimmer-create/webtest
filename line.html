@@ -25,7 +25,7 @@
       color:white;
     }
   </style>
-  
+
 </head>
 <body>
   <canvas class="canvas"></canvas>
@@ -47,7 +47,6 @@
     tick();
     window.addEventListener('resize', resize);
 
-    /** エンターフレームのタイミングです。 */
     function tick() {
       requestAnimationFrame(tick);
       const time = Date.now() / 4000;
@@ -55,9 +54,8 @@
     }
 
 
-    /** 描画します。 */
     function draw(time) {
-      // 画面をリセット
+
       context.clearRect(0, 0, stageW, stageH);
       context.lineWidth = 1;
 
@@ -72,7 +70,7 @@
 
         const h = Math.round(j / lineNum * 200-240); // 色相
         const s = 40; // 彩度
-        const l = Math.round(j / lineNum * 40); // 明度
+        const l = Math.round(j / lineNum * 90); // 明度
         context.strokeStyle = `hsl(${h}, ${s}%, ${l}%)`;
 
         [...Array(segmentNum).keys()].forEach(i => {
@@ -93,7 +91,6 @@
       });
     }
 
-    /** リサイズ時のイベントです。 */
     function resize() {
       stageW = innerWidth * devicePixelRatio;
       stageH = innerHeight * devicePixelRatio;
